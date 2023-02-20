@@ -17,6 +17,11 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('Build') {
+      steps { 
+         echo 'Building not required'
+      }
+    }
     stage('test') {
       steps { 
         sh 'npm test'
